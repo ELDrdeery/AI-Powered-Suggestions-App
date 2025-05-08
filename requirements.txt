@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+langchain==0.3.23
+langchain-google-genai==2.1.2
+python-dotenv==1.1.0
