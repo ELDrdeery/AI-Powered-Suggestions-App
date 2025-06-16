@@ -4,7 +4,7 @@ This FastAPI-based application, deployed on Railway, provides an endpoint to ana
 
 ## Base URL
 ```
-https://ai-powered-suggestions-app-production-196d.up.railway.app/
+https://ai-powered-suggestions-app-production-c030.up.railway.app
 ```
 
 ## Features
@@ -20,7 +20,7 @@ https://ai-powered-suggestions-app-production-196d.up.railway.app/
 
 ### Endpoint
 - **POST `/analyze-image`**
-  - **URL**: `https://ai-powered-suggestions-app-production-196d.up.railway.app/analyze-image`
+  - **URL**: `https://ai-powered-suggestions-app-production-c030.up.railway.app/analyze-image`
   - **Content-Type**: `multipart/form-data`
   - **Request Body**: A single file field named `file` containing the image (PNG, JPEG, etc.).
   - **Response**: JSON object with `problems`, `problem_types`, and `suggestions`.
@@ -28,14 +28,14 @@ https://ai-powered-suggestions-app-production-196d.up.railway.app/
 ### Example Request
 Using `curl`:
 ```bash
-curl -X POST "https://ai-powered-suggestions-app-production-196d.up.railway.app/analyze-image" -F "file=@/path/to/image.png"
+curl -X POST "https://ai-powered-suggestions-app-production-c030.up.railway.app/analyze-image" -F "file=@/path/to/image.png"
 ```
 
 Using Python (`requests`):
 ```python
 import requests
 
-url = "https://ai-powered-suggestions-app-production-196d.up.railway.app/analyze-image"
+url = "https://ai-powered-suggestions-app-production-c030.up.railway.app/analyze-image"
 files = {"file": open("image.png", "rb")}
 response = requests.post(url, files=files)
 print(response.json())
