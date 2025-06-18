@@ -64,20 +64,33 @@ prompt_template = PromptTemplate(
         - Each problem must have a corresponding problem type and suggestion at the same index.
         - Use concise, standard terms for problem types relevant to government or public reporting.
 
-        Note: Response in Egyptian Arabic dialect
 
         Example output:
         {{
-            "problems": ["Broken lock on door", "Cracked sidewalk", "Overflowing trash bin"],
-            "problem_types": ["security", "infrastructure", "maintenance"],
-            "suggestions": [
-                "Replace the lock and report to building management",
-                "Report to local authorities for sidewalk repair",
-                "Request more frequent trash collection"
-            ]
+          "problems": [
+            "كالون الباب مكسور",
+            "رصيف مكسر",
+            "صندوق زبالة مليان على آخره"
+          ],
+          "problem_types": [
+            "أمان",
+            "بنية تحتية",
+            "صيانة"
+          ],
+          "suggestions": [
+            "غيّر الكالون وبلّغ إدارة المبنى",
+            "بلّغ الحي عشان يصلّحوا الرصيف",
+            "اطلب ييجوا يلمّوا الزبالة أكتر"
+          ]
         }}
-
+        
+        \n
+        
         Image description: {image_description}
+        
+        \n
+
+        Response in Egyptian Arabic dialect
     """
 )
 
